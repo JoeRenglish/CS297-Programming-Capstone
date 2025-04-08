@@ -2,7 +2,20 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="calendar">
+    <div class="calendar-header">
+        <button id="prev-month">Previous</button>
+        <div id="month-year"></div>
+        <button id="next-month">Next</button>
+    </div>
+    <div class="calendar-body">
+        <div class="calendar-weekdays">
+            
+        </div>
+        <div class="calendar-dates">
+            
+        </div>
+    </div>
 </div>
+
+<script src="js/calendar.js"></script>
