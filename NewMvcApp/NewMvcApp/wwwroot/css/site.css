@@ -19,12 +19,25 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #8aa386;
 }
 
-/* ---------------- Calendar Styles ---------------- */
+.social-media {
+  display: flex;
+  justify-content: center;
+}
 
+.prosed-mascot {
+  width: 200px;
+}
+
+/* -------------------------------- Calendar Styles -------------------------------- */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+}
 .calendar {
-  width: 350px;
+  border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -63,4 +76,29 @@ body {
 }
 .calendar-dates div:hover {
   background-color: lightblue;
+}
+.current-date {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .calendar-weekdays div  {
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+  }
+  .calendar-dates div {
+    text-align: left;
+    padding: 10px;
+    width: 100px;
+  }
+  
+  .calendar-dates div {
+    border: 1px solid lightgray;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+  }
 }
