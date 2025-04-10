@@ -13,33 +13,27 @@
                 <img src="~/Image/profile-circle.svg" alt="profile icon" width="200" height="300" />
             </div>
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-            <!-- Username field -->
             <div class="form-floating mb-3">
                 <input asp-for="Username" class="form-control" placeholder="Please choose your username." />
                 <label asp-for="Username" class="form-label"></label>
             </div>
-            <!-- Email field -->
             <div class="form-floating mb-3">
                 <input class="form-control" placeholder="Please enter your email." />
                 <label class="form-label">Email</label>
             </div>
-            <!-- First Name field -->
             <div class="form-floating mb-3">
                 <input class="form-control" placeholder="Please enter your first name." />
                 <label class="form-label">First Name</label>
             </div>
-            <!-- Last Name field -->
             <div class="form-floating mb-3">
                 <input class="form-control" placeholder="Please enter your last name." />
                 <label class="form-label">Last Name</label>
             </div>
-            <!-- Phone Number field -->
             <div class="form-floating mb-3">
                 <input asp-for="Input.PhoneNumber" class="form-control" placeholder="Please enter your phone number." />
                 <label asp-for="Input.PhoneNumber" class="form-label"></label>
                 <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
             </div>
-            <!-- About Me field -->
             <div class="form-floating mb-3">
                 <textarea class="form-control" placeholder="Please enter your about me." rows="4"></textarea>
                 <label class="form-label">About Me</label>
