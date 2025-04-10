@@ -1,5 +1,5 @@
 ﻿@{
-    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout !=  null)
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout != null)
     {
         Layout = parentLayout.ToString();
     }
@@ -8,22 +8,40 @@
         Layout = "/Areas/Identity/Pages/_Layout.cshtml";
     }
 }
+<style>
+    .justify-content-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; 
+    }
 
-<h1>Manage your account</h1>
-
-<div>
-    <h2>Change your account settings</h2>
-    <hr />
-    <div class="row">
-        <div class="col-md-3">
-            <partial name="_ManageNav" />
-        </div>
-        <div class="col-md-9">
-            @RenderBody()
+    .rounded-box {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 800px;
+    }
+</style>
+<div class="justify-content-center">
+    <div class="rounded-box">
+        <h2>My Account</h2>
+        <div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>User settings</h6>
+                    <partial name="_ManageNav" />
+                </div>
+                <div class="col-md-9">
+                    @RenderBody()
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @RenderSection("Scripts", required: false)
-}
+    @section Scripts {
+        @RenderSection("Scripts", required: false)
+    }
