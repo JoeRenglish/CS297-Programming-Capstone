@@ -1,8 +1,55 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="row d-flex justify-content-center mb-3">
+        <img class="prosed-mascot" src="images/prosed-mascot.jpg"/>
+    </div>
+    <div class="row mb-3">
+        <div class="col d-flex justify-content-center align-items-center">
+            <div style="margin-right: 20px;">
+                <a href="https://www.instagram.com/prosedbooks/" class="social-media-links" target="_blank">
+                    <img class="social-media-logo" src="images/instagram-logo.png"/>
+                    <span class="fw-bold">Instagram</span>
+                </a>
+            </div>
+            <div style="margin-right: 20px;">
+                <a href="https://www.reddit.com/user/prosedbooks/" class="social-media-links" target="_blank">
+                    <img class="social-media-logo" src="images/reddit-logo.png"/>
+                    <span class="fw-bold">Reddit</span>
+                </a>
+            </div>
+            <div>
+                <a href="https://prosedbooks.square.site/" class="social-media-links" target="_blank">
+                    <img class="social-media-logo" src="images/square-logo.png"/>
+                    <span class="fw-bold">Bookstore</span>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="calendar-container">
+    <div class="calendar">
+        <div class="calendar-header">
+            <button id="prev-month">Prev</button>
+            <div id="month-year"></div>
+            <button id="next-month">Next</button>
+        </div>
+        <div class="calendar-body">
+            <div class="calendar-weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="calendar-dates">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/calendar.js"></script>
